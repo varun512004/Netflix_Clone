@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="netflix-logo.webp">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Netflix.js"></script>
+</head>
+<body>
+
+    <!---------NAVBAR----------->
+
+    <div class="nav">
+        <div class="nav_left">
+            <a href="Netflix.html">
+                <img class="nav_logo" src="Netflix_Logo.jpg" alt="Netflix">
+            </a>
+        </div>
+        <div class="nav_right">
+            <a href="#"><i id="search" class="fa-solid fa-magnifying-glass"></i></a>
+            <img class="nav_avatar" src="Netflix-avatar.png" alt="Avatar">
+        </div>
+    </div>
+
+    <!---------BANNER----------->
+
+    <header id="banner">
+        <div id="banner_contents">
+            <h1 id="banner_title"></h1>
+            <div id="banner_buttons">
+                <button id="banner_button">Play</button>
+                <button id="banner_button">My List</button>
+            </div>
+        <p id="banner_description"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>
+    </header>
+
+    <!---------ROW----------->
+
+    <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector(".nav");
+            nav.classList.toggle("active", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
